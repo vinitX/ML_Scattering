@@ -1,0 +1,52 @@
+BOLSIG+ version: 03/2016
+Collision input data:
+ 
+ 
+ 
+Angular frequency / N (m3/s)               0.000    
+Cosine of E-B field angle                  0.000    
+Gas temperature (K)                        0.000    
+Excitation temperature (K)                 300.0    
+Transition energy (eV)                     0.000    
+Ionization degree                          0.000    
+Plasma density (1/m3)                     0.1000E+19
+Ion charge parameter                       1.000    
+Ion/neutral mass ratio                     1.000    
+e-e momentum effects                       1.000    
+Energy sharing                             1.000    
+Growth model                               1.000    
+Maxwellian mean energy (eV)                0.000    
+# of grid points                           500.0    
+Grid type                                  0.000    
+Maximum energy                             200.0    
+Precision                                 0.1000E-09
+Convergence                               0.1000E-03
+Maximum # of iterations                    1000.    
+ 
+ 
+E/N (Td)    	Electric field / N (Td)                                         
+0.1000	0.1000
+0.2154	0.2154
+0.4642	0.4642
+1.000	1.000
+2.154	2.154
+4.642	4.642
+10.00	10.00
+21.54	21.54
+46.42	46.42
+100.0	100.0
+ 
+ 
+E/N (Td)	Error code
+0.1000	11.00
+0.2154	11.00
+0.4642	11.00
+1.000	11.00
+2.154	11.00
+4.642	11.00
+10.00	11.00
+21.54	11.00
+46.42	11.00
+100.0	11.00
+ 
+ 

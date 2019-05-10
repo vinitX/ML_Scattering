@@ -1,0 +1,18 @@
+BOLSIG+ script file: He.dat
+RUN
+R1    1.00 Td    Missing elastic collisions                     
+CLEARRUNS
+RUNSERIES
+R1    0.1000 Td    Missing elastic collisions                   
+R2    0.215 Td    Missing elastic collisions                    
+R3    0.464 Td    Missing elastic collisions                    
+R4    1.00 Td    Missing elastic collisions                     
+R5    2.15 Td    Missing elastic collisions                     
+R6    4.64 Td    Missing elastic collisions                     
+R7    10.0 Td    Missing elastic collisions                     
+R8    21.5 Td    Missing elastic collisions                     
+R9    46.4 Td    Missing elastic collisions                     
+R10   100. Td    Missing elastic collisions                     
+SAVERESULTS
+example1.dat
+FINISHED
