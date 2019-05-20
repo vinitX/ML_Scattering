@@ -1,37 +1,22 @@
 BOLSIG+ script file: ex.dat
 READCOLLISIONS
-Reid
-LXCat.txt
-C1    Reid    Effective (momentum)                              
+Power
+LXCat0.txt
+C1    Power    Effective (momentum)                             
 RUN
-R1    1.00 Td    0.382 eV                                       
+R1    0.400 Td    0.155 eV                                      
 CLEARRUNS
 RUNSERIES
-R1    0.1000 Td    0.0608 eV                                    
-R2    0.133 Td    0.0808 eV                                     
-R3    0.178 Td    0.106 eV                                      
-R4    0.237 Td    0.137 eV                                      
-R5    0.316 Td    0.172 eV                                      
-R6    0.422 Td    0.213 eV                                      
-R7    0.562 Td    0.261 eV                                      
-R8    0.750 Td    0.317 eV                                      
-R9    1.00 Td    0.382 eV                                       
-R10   1.33 Td    0.457 eV                                       
-R11   1.78 Td    0.545 eV                                       
-R12   2.37 Td    0.648 eV                                       
-R13   3.16 Td    0.766 eV                                       
-R14   4.22 Td    0.904 eV                                       
-R15   5.62 Td    1.06 eV                                        
-R16   7.50 Td    1.25 eV                                        
-R17   10.0 Td    1.47 eV                                        
-R18   13.3 Td    1.77 eV                                        
-R19   17.8 Td    2.22 eV                                        
-R20   23.7 Td    3.01 eV                                        
-R21   31.6 Td    4.54 eV                                        
-R22   42.2 Td    7.85 eV                                        
-R23   56.2 Td    16.3 eV                                        
-R24   75.0 Td    43.1 eV                                        
-R25   100. Td    Failed                                         
+R1    0.400 Td    0.155 eV                                      
+R2    0.558 Td    0.265 eV                                      
+R3    0.778 Td    0.480 eV                                      
+R4    1.09 Td    0.897 eV                                       
+R5    1.51 Td    1.71 eV                                        
+R6    2.11 Td    3.29 eV                                        
+R7    2.95 Td    6.37 eV                                        
+R8    4.11 Td    12.4 eV                                        
+R9    5.73 Td    24.0 eV                                        
+R10   8.00 Td    46.7 eV                                        
 SAVERESULTS
-Reid.dat
+Power.dat
 FINISHED

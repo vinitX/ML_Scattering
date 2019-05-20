@@ -45,7 +45,6 @@ Table of the cross section as a function of energy. The table starts and ends by
 and has otherwise two numbers per line: the energy in eV and the cross section in m2.
 
 ------------------------------------------------------------
-
 COMMENT
 Ar
 References : 
