@@ -1,22 +1,115 @@
 BOLSIG+ script file: ex.dat
 READCOLLISIONS
-Power
+Reid
 LXCat0.txt
-C1    Power    Effective (momentum)                             
+C1    Reid    Elastic                                           
+C2    Reid    Excitation    0.20 eV                             
 RUN
-R1    0.400 Td    0.155 eV                                      
+R1    1.00 Td    0.102 eV                                       
+R2    12.0 Td    0.274 eV                                       
+R3    24.0 Td    0.416 eV                                       
 CLEARRUNS
 RUNSERIES
-R1    0.400 Td    0.155 eV                                      
-R2    0.558 Td    0.265 eV                                      
-R3    0.778 Td    0.480 eV                                      
-R4    1.09 Td    0.897 eV                                       
-R5    1.51 Td    1.71 eV                                        
-R6    2.11 Td    3.29 eV                                        
-R7    2.95 Td    6.37 eV                                        
-R8    4.11 Td    12.4 eV                                        
-R9    5.73 Td    24.0 eV                                        
-R10   8.00 Td    46.7 eV                                        
+R1    1.00 Td    0.102 eV                                       
+R2    1.04 Td    0.103 eV                                       
+R3    1.08 Td    0.104 eV                                       
+R4    1.13 Td    0.105 eV                                       
+R5    1.17 Td    0.106 eV                                       
+R6    1.22 Td    0.107 eV                                       
+R7    1.27 Td    0.108 eV                                       
+R8    1.32 Td    0.109 eV                                       
+R9    1.37 Td    0.110 eV                                       
+R10   1.43 Td    0.111 eV                                       
+R11   1.48 Td    0.112 eV                                       
+R12   1.54 Td    0.114 eV                                       
+R13   1.61 Td    0.115 eV                                       
+R14   1.67 Td    0.116 eV                                       
+R15   1.74 Td    0.118 eV                                       
+R16   1.81 Td    0.119 eV                                       
+R17   1.88 Td    0.120 eV                                       
+R18   1.96 Td    0.122 eV                                       
+R19   2.04 Td    0.123 eV                                       
+R20   2.12 Td    0.125 eV                                       
+R21   2.20 Td    0.127 eV                                       
+R22   2.29 Td    0.128 eV                                       
+R23   2.39 Td    0.130 eV                                       
+R24   2.48 Td    0.132 eV                                       
+R25   2.58 Td    0.134 eV                                       
+R26   2.69 Td    0.135 eV                                       
+R27   2.79 Td    0.137 eV                                       
+R28   2.91 Td    0.139 eV                                       
+R29   3.02 Td    0.141 eV                                       
+R30   3.15 Td    0.144 eV                                       
+R31   3.27 Td    0.146 eV                                       
+R32   3.40 Td    0.148 eV                                       
+R33   3.54 Td    0.150 eV                                       
+R34   3.68 Td    0.153 eV                                       
+R35   3.83 Td    0.155 eV                                       
+R36   3.99 Td    0.158 eV                                       
+R37   4.15 Td    0.161 eV                                       
+R38   4.31 Td    0.163 eV                                       
+R39   4.49 Td    0.166 eV                                       
+R40   4.67 Td    0.169 eV                                       
+R41   4.86 Td    0.172 eV                                       
+R42   5.05 Td    0.175 eV                                       
+R43   5.26 Td    0.178 eV                                       
+R44   5.47 Td    0.182 eV                                       
+R45   5.69 Td    0.185 eV                                       
+R46   5.92 Td    0.189 eV                                       
+R47   6.16 Td    0.192 eV                                       
+R48   6.41 Td    0.196 eV                                       
+R49   6.66 Td    0.200 eV                                       
+R50   6.93 Td    0.204 eV                                       
+R51   7.21 Td    0.208 eV                                       
+R52   7.50 Td    0.212 eV                                       
+R53   7.81 Td    0.216 eV                                       
+R54   8.12 Td    0.221 eV                                       
+R55   8.45 Td    0.226 eV                                       
+R56   8.79 Td    0.230 eV                                       
+R57   9.14 Td    0.235 eV                                       
+R58   9.51 Td    0.240 eV                                       
+R59   9.89 Td    0.246 eV                                       
+R60   10.3 Td    0.251 eV                                       
+R61   10.7 Td    0.257 eV                                       
+R62   11.1 Td    0.262 eV                                       
+R63   11.6 Td    0.268 eV                                       
+R64   12.1 Td    0.274 eV                                       
+R65   12.5 Td    0.281 eV                                       
+R66   13.0 Td    0.287 eV                                       
+R67   13.6 Td    0.294 eV                                       
+R68   14.1 Td    0.301 eV                                       
+R69   14.7 Td    0.308 eV                                       
+R70   15.3 Td    0.315 eV                                       
+R71   15.9 Td    0.323 eV                                       
+R72   16.5 Td    0.331 eV                                       
+R73   17.2 Td    0.339 eV                                       
+R74   17.9 Td    0.347 eV                                       
+R75   18.6 Td    0.355 eV                                       
+R76   19.4 Td    0.364 eV                                       
+R77   20.1 Td    0.373 eV                                       
+R78   21.0 Td    0.382 eV                                       
+R79   21.8 Td    0.392 eV                                       
+R80   22.7 Td    0.402 eV                                       
+R81   23.6 Td    0.412 eV                                       
+R82   24.6 Td    0.422 eV                                       
+R83   25.5 Td    0.433 eV                                       
+R84   26.6 Td    0.444 eV                                       
+R85   27.6 Td    0.456 eV                                       
+R86   28.8 Td    0.467 eV                                       
+R87   29.9 Td    0.479 eV                                       
+R88   31.1 Td    0.492 eV                                       
+R89   32.4 Td    0.504 eV                                       
+R90   33.7 Td    0.518 eV                                       
+R91   35.0 Td    0.531 eV                                       
+R92   36.4 Td    0.545 eV                                       
+R93   37.9 Td    0.559 eV                                       
+R94   39.4 Td    0.574 eV                                       
+R95   41.0 Td    0.589 eV                                       
+R96   42.7 Td    0.604 eV                                       
+R97   44.4 Td    0.620 eV                                       
+R98   46.2 Td    0.637 eV                                       
+R99   48.1 Td    0.654 eV                                       
+R100  50.0 Td    0.671 eV                                       
 SAVERESULTS
-Power.dat
+Reid.dat
 FINISHED
