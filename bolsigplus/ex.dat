@@ -11,7 +11,7 @@ Reid                 / Species
 1                    / Extrapolate: 0= No 1= Yes
 
 CONDITIONS
-VAR       / Electric field / N (Td)
+1       / Electric field / N (Td)
 0        / Angular field frequency / N (m3/s)
 0.        / Cosine of E-B field angle
 0.       / Gas temperature (K)
@@ -33,13 +33,6 @@ VAR       / Electric field / N (Td)
 1000      / Maximum # of iterations
 1        / Gas composition fractions       
 1         / Normalize composition to unity: 0=No; 1=Yes
-
-RUN
-1
-12
-24
-
-CLEARRUNS
 
 RUNSERIES
 1          / Variable: 1=E/N; 2=Mean energy; 3=Maxwellian energy 
