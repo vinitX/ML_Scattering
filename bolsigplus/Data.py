@@ -7,7 +7,7 @@ def Bolsig(sigma_m,E_th,slope):
     sigma_m=sigma_m*1e-20
     slope=slope*1e-20
     f=open("LXCat0.txt","w")
-    n=1000
+    n=500
     E=np.logspace(-3,1,n)
 
     f.write('----------------------\n')
@@ -75,7 +75,7 @@ def Bolsig(sigma_m,E_th,slope):
 cross=open('Y_train.csv','wb')
 trans=open('X_train.csv','wb')
 
-n=4
+n=20
 sigma_m=np.random.rand(n)*9+1 #in (Angstrom)^2
 E_th=np.random.rand(n)*0.9+0.1  # in eV 
 slope=np.random.rand(n)*9+1 #in (Angstrom)^2
