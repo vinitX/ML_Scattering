@@ -4,13 +4,15 @@ import os
 import tempfile
 import numpy as np
 from subprocess import Popen, check_output, PIPE
+import matplotlib.pyplot as plt
+import time
 
 import os
 import re
 
 def ListAllTargets():
     if "SLURM_JOB_NODELIST" not in os.environ:
-        return ["localhost"]
+        return ["localhost", "localhost"]
     # return ["localhost"] * 4
     node_list = os.environ["SLURM_JOB_NODELIST"].split(",")
     in_cpus_node = os.environ["SLURM_JOB_CPUS_PER_NODE"].split(",")
@@ -45,9 +47,9 @@ class ProcessThread(Thread):
         # print("Queue start with target={}".format(self.node_target))
         while not self.q_in.empty():
             item = self.q_in.get(False)
-            print("Got item", item)
+            #print("Got item", item)
             out = self.func(self.node_target, item)
-            print("Found out",out)
+            #print("Found out",out)
             self.q_out.put(out)
 
 def RunJobs(target_list, itr, func):
@@ -113,7 +115,7 @@ def Input(input_file,Y):
             f.write(str(E[i])+' '+str(sigma_exc[i])+'\n')
         f.close()
 
-def Ex(ex_file, grid=100, E_min=0.1, E_max=1e3, n=1000):
+def Ex(ex_file, dirname, grid=100, E_min=0.1, E_max=1e3, n=1000):
     with open(ex_file, "w") as f:
         f.write("READCOLLISIONS\n")
         f.write("LXCat.txt\nSurge\n1\n")
@@ -158,13 +160,45 @@ def Ex(ex_file, grid=100, E_min=0.1, E_max=1e3, n=1000):
         f.write("END")
         f.close()
         
+def Output(dirname,n=1000):
+    output_data = []
+    
+    with open(os.path.join(dirname, "Surge.dat")) as f:
+        #output_data += [f.read()]
+            
+        E=np.zeros(n)
+        out=np.zeros((n,3))
+        for line in f:
+            if line[:8]=='E/N (Td)' and line[8:].strip()=='Mean energy (eV)':
+                for i in range(n):
+                    l=f.readline().strip()
+                    if len(l)==0: break
+                    E[i], out[i,0] = [float(x) for x in l.split()]
+            if line[:8]=='E/N (Td)' and line[8:].strip()=='Mobility *N (1/m/V/s)':
+                for i in range(n):
+                    l=f.readline().strip()
+                    if len(l)==0: break
+                    E[i], out[i,1] = [float(x) for x in l.split()]
+            if line[:8]=='E/N (Td)' and line[8:].strip()=='Diffusion coefficient *N (1/m/s)':
+                for i in range(n):
+                    l=f.readline().strip()
+                    if len(l)==0: break
+                    E[i], out[i,2] = [float(x) for x in l.split()]
+
+        out[:,1]=out[:,1]*E*1e-21 #Drift Velocity
+        out[:,2]=out[:,2]*1e-24 #Diffusion coefficient
+    return np.log10(out)
+
 def ExampleProg():
+    cross=open('Y.csv','wb')
+    trans=open('X.csv','wb')
+    
     target_list = ListAllTargets()
 
     tempdir_list = []
     joblist = []
     
-    n=1
+    n=4
     
     sigma_m=10**(np.random.rand(n)) #in (1 to 10) (Angstrom)^2
     E_th=10**(np.random.rand(n)-1)  #in (0.1 to 1) eV 
@@ -173,58 +207,59 @@ def ExampleProg():
     Y[:,0]=sigma_m
     Y[:,1]=E_th
     Y[:,2]=slope
-
+    
     for i in range(n):
         # dirname = "Job_p{}".format(param)
         # os.mkdir(dirname)
         tempdir = tempfile.TemporaryDirectory(dir="")
 
         dirname = tempdir.name
-        print(dirname)
+        #print(dirname)
         input_file = os.path.join(dirname, "LXCat.txt")
         Input(input_file,Y[i,:])
         
         ex_file = os.path.join(dirname, "ex.dat")
-        Ex(ex_file)
+        Ex(ex_file,dirname)
         
         # Copy Bolsig into this dir
-        os.popen('cp bolsigminus '+dirname)
-        
-        process = Popen(['ls',dirname], stdout=PIPE, stderr=PIPE)
-        stdout,stderr=process.communicate()
-        #print(stdout,stderr)
+        import shutil
+        shutil.copy("bolsigminus", dirname)
+        #os.popen('cp bolsigminus '+dirname)
 
         tempdir_list += [tempdir]
         joblist += [os.path.abspath(dirname)]
 
     def SingleJob(target, dirname):
-        print(dirname)
-        '''
+        #print(os.path.basename(dirname))
         os.chdir(dirname)
-        process = Popen('ls', stdout=PIPE, stderr=PIPE)
-        stdout,stderr=process.communicate()
-        print(stdout,stderr)
         
-        out = check_output(['./bolsigminus', 'ex.dat'])
-        '''
-        out = check_output(['.'+dirname+'/bolsigminus', 'ex.dat'])
-        #out = subprocess.check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "./bolsig","ex.dat"])
-        #out = subprocess.check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "bash -c 'cd {}; cat infile.txt > outfile.txt'".format(dirname)])
+        #process = Popen(['./bolsigminus', 'ex.dat'], stdout=PIPE, stderr=PIPE)
+        #stdout,stderr=process.communicate()
+        #out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "bash -c 'cd {}; ./bolsigminus ex.dat'".format(dirname)])
+        out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "bash -c 'cd {}; zsh ../runbolsigonfile.sh'".format(dirname)])
+        #out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "".format(dirname)])
+
+        #print("The output from dirname={} was out={}".format(dirname,out))
+        
+        print('|',end='')
+        
+        os.chdir('/home/vsingh/bolsigplus')
 
     RunJobs(target_list, joblist, SingleJob)
-    '''
-    output_data = []
-
-    for tempdir in tempdir_list:
+    
+    for i in range(n):
+        tempdir=tempdir_list[i]
         dirname = tempdir.name
-        with open(os.path.join(dirname, "Surge.txt")) as file:
-            output_data += [file.read()]
+        X=Output(dirname,1000)
+        np.savetxt(cross,np.reshape(Y[i,:],(1,-1)),delimiter=',')
+        np.savetxt(trans,np.reshape(X,(1,-1)),delimiter=',')
         # Clean up dir
         tempdir.cleanup()
+    cross.close()
+    trans.close()
     
-    return output_data
-    '''
-    
+t=time.time()
 ExampleProg()
+print(time.time()-t)
 
         
