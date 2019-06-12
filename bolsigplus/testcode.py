@@ -86,14 +86,26 @@ def TestJob(target, x):
     return target,x,100 + x,out
 '''
 
+def surge_exp(E,p,lmbd,E_th):
+    x=E-E_th
+    return np.heaviside(x,1)*((e/lmbd)**p)*(x**p)*np.exp(-p*x/lmbd)
+    
+def surge_pwr(E,p,lmbd,E_th):
+    x=E-E_th
+    return np.heaviside(x,1)*(lmbd**p)*(p+1)**(p+1)*x/(x+p*lmbd)**(p+1)
 
 def Input(input_file,Y):
-    sigma_m=Y[0]*1e-20
-    E_th=Y[1]
-    slope=Y[2]*1e-20
+    A=Y[:m]
+    p=Y[m:2*m]
+    lmbd=Y[2*m:3*m]
+    E_th=Y[3*m:]
     
     n=500
-    E=np.logspace(-2,2,n)
+    E=np.logspace(-1,3,n)
+    
+    sigma_m=0
+    for i in range(m):
+        sigma_m+=A[i]*1e-20*surge_pwr(E,p[i],lmbd[i],E_th[i])
 
     with open(input_file, "w") as f:
 
@@ -103,8 +115,8 @@ def Input(input_file,Y):
         f.write('----------------------\n')
     
         for i in range(n):
-            f.write(str(E[i])+' '+str(sigma_m)+'\n')
-
+            f.write(str(E[i])+' '+str(sigma_m[i])+'\n')
+        '''
         f.write('----------------------\n')
         f.write('EXCITATION\nSurge\n')
         f.write(str(E_th)+' / Thresold Energy\n')
@@ -113,6 +125,7 @@ def Input(input_file,Y):
         sigma_exc=slope*(E-E_th)*np.heaviside(E-E_th,1)
         for i in range(n):
             f.write(str(E[i])+' '+str(sigma_exc[i])+'\n')
+        '''
         f.close()
 
 def Ex(ex_file, dirname, grid=100, E_min=0.1, E_max=1e3, n=1000):
@@ -189,77 +202,75 @@ def Output(dirname,n=1000):
         out[:,2]=out[:,2]*1e-24 #Diffusion coefficient
     return np.log10(out)
 
-def ExampleProg():
-    cross=open('Y.csv','wb')
-    trans=open('X.csv','wb')
-    
-    target_list = ListAllTargets()
 
-    tempdir_list = []
-    joblist = []
+cross=open('Y.csv','wb')
+trans=open('X.csv','wb')
     
-    n=4
-    
-    sigma_m=10**(np.random.rand(n)) #in (1 to 10) (Angstrom)^2
-    E_th=10**(np.random.rand(n)-1)  #in (0.1 to 1) eV 
-    slope=10**(np.random.rand(n)*2) #in (1 to 100) (Angstrom)^2
-    Y=np.zeros((n,3))
-    Y[:,0]=sigma_m
-    Y[:,1]=E_th
-    Y[:,2]=slope
-    
-    for i in range(n):
-        # dirname = "Job_p{}".format(param)
-        # os.mkdir(dirname)
-        tempdir = tempfile.TemporaryDirectory(dir="")
+target_list = ListAllTargets()
 
-        dirname = tempdir.name
-        #print(dirname)
-        input_file = os.path.join(dirname, "LXCat.txt")
-        Input(input_file,Y[i,:])
+tempdir_list = []
+joblist = []
+    
+n=3
+m=1 #no. of Surge functions
+
+A=10**(np.random.rand(n,m)*4-2) # in range (0.01 to 100) (Angstrom)^2
+p=np.random.rand(n,m)*2  #in (0 to 2) 
+lmbd=10**(np.random.rand(n,m)*2) #in (1 to 100) (eV)
+E_th=-10**(np.random.rand(n,m)*2) # in (-1 to -100) (eV)
+Y=np.zeros((n,4*m))
+Y[:,:m]=A
+Y[:,m:2*m]=p
+Y[:,2*m:3*m]=lmbd
+Y[:,3*m:]=E_th
+    
+for i in range(n):
+    tempdir = tempfile.TemporaryDirectory(dir="")
+
+    dirname = tempdir.name
+    #print(dirname)
+    input_file = os.path.join(dirname, "LXCat.txt")
+    Input(input_file,Y[i,:])
         
-        ex_file = os.path.join(dirname, "ex.dat")
-        Ex(ex_file,dirname)
+    ex_file = os.path.join(dirname, "ex.dat")
+    Ex(ex_file,dirname)
         
-        # Copy Bolsig into this dir
-        import shutil
-        shutil.copy("bolsigminus", dirname)
-        #os.popen('cp bolsigminus '+dirname)
+    # Copy Bolsig into this dir
+    import shutil
+    shutil.copy("bolsigminus", dirname)
+    #os.popen('cp bolsigminus '+dirname)
 
-        tempdir_list += [tempdir]
-        joblist += [os.path.abspath(dirname)]
+    tempdir_list += [tempdir]
+    joblist += [os.path.abspath(dirname)]
 
-    def SingleJob(target, dirname):
-        #print(os.path.basename(dirname))
-        os.chdir(dirname)
+def SingleJob(target, dirname):
+    #print(os.path.basename(dirname))
+    os.chdir(dirname)
         
-        #process = Popen(['./bolsigminus', 'ex.dat'], stdout=PIPE, stderr=PIPE)
-        #stdout,stderr=process.communicate()
-        #out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "bash -c 'cd {}; ./bolsigminus ex.dat'".format(dirname)])
-        out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "bash -c 'cd {}; zsh ../runbolsigonfile.sh'".format(dirname)])
-        #out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "".format(dirname)])
+    #process = Popen(['./bolsigminus', 'ex.dat'], stdout=PIPE, stderr=PIPE)
+    #stdout,stderr=process.communicate()
+    #out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "bash -c 'cd {}; ./bolsigminus ex.dat'".format(dirname)])
+    out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "bash -c 'cd {}; zsh ../runbolsigonfile.sh'".format(dirname)])
+    #out = check_output(["ssh", "-o", "StrictHostKeyChecking=no", target, "".format(dirname)])
 
-        #print("The output from dirname={} was out={}".format(dirname,out))
+    #print("The output from dirname={} was out={}".format(dirname,out))
         
-        print('|',end='')
+    print('|',end='')
         
-        os.chdir('/home/vsingh/bolsigplus')
+    os.chdir('/home/vsingh/bolsigplus')
 
-    RunJobs(target_list, joblist, SingleJob)
-    
-    for i in range(n):
-        tempdir=tempdir_list[i]
-        dirname = tempdir.name
-        X=Output(dirname,1000)
-        np.savetxt(cross,np.reshape(Y[i,:],(1,-1)),delimiter=',')
-        np.savetxt(trans,np.reshape(X,(1,-1)),delimiter=',')
-        # Clean up dir
-        tempdir.cleanup()
-    cross.close()
-    trans.close()
-    
 t=time.time()
-ExampleProg()
+RunJobs(target_list, joblist, SingleJob)
+    
+for i in range(n):
+    tempdir=tempdir_list[i]
+    dirname = tempdir.name
+    X=Output(dirname,1000)
+    np.savetxt(cross,np.reshape(Y[i,:],(1,-1)),delimiter=',')
+    np.savetxt(trans,np.reshape(X,(1,-1)),delimiter=',')
+    # Clean up dir
+    tempdir.cleanup()
+cross.close()
+trans.close()
 print(time.time()-t)
-
         
