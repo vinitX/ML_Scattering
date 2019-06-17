@@ -1,0 +1,1009 @@
+BOLSIG+ script file: ex.dat
+READCOLLISIONS
+Surge
+LXCat0.txt
+C1    Surge    Elastic                                          
+RUNSERIES
+R1    0.1000 Td    6.78 eV                                      
+R2    0.101 Td    6.85 eV                                       
+R3    0.102 Td    6.91 eV                                       
+R4    0.103 Td    6.98 eV                                       
+R5    0.104 Td    7.04 eV                                       
+R6    0.105 Td    7.11 eV                                       
+R7    0.106 Td    7.18 eV                                       
+R8    0.107 Td    7.25 eV                                       
+R9    0.108 Td    7.32 eV                                       
+R10   0.109 Td    7.39 eV                                       
+R11   0.110 Td    7.46 eV                                       
+R12   0.111 Td    7.53 eV                                       
+R13   0.112 Td    7.60 eV                                       
+R14   0.113 Td    7.67 eV                                       
+R15   0.114 Td    7.75 eV                                       
+R16   0.115 Td    7.82 eV                                       
+R17   0.116 Td    7.89 eV                                       
+R18   0.117 Td    7.97 eV                                       
+R19   0.118 Td    8.05 eV                                       
+R20   0.119 Td    8.12 eV                                       
+R21   0.120 Td    8.20 eV                                       
+R22   0.121 Td    8.28 eV                                       
+R23   0.122 Td    8.36 eV                                       
+R24   0.124 Td    8.44 eV                                       
+R25   0.125 Td    8.52 eV                                       
+R26   0.126 Td    8.60 eV                                       
+R27   0.127 Td    8.68 eV                                       
+R28   0.128 Td    8.77 eV                                       
+R29   0.129 Td    8.85 eV                                       
+R30   0.131 Td    8.93 eV                                       
+R31   0.132 Td    9.02 eV                                       
+R32   0.133 Td    9.11 eV                                       
+R33   0.134 Td    9.19 eV                                       
+R34   0.136 Td    9.28 eV                                       
+R35   0.137 Td    9.37 eV                                       
+R36   0.138 Td    9.46 eV                                       
+R37   0.139 Td    9.55 eV                                       
+R38   0.141 Td    9.64 eV                                       
+R39   0.142 Td    9.73 eV                                       
+R40   0.143 Td    9.83 eV                                       
+R41   0.145 Td    9.92 eV                                       
+R42   0.146 Td    10.0 eV                                       
+R43   0.147 Td    10.1 eV                                       
+R44   0.149 Td    10.2 eV                                       
+R45   0.150 Td    10.3 eV                                       
+R46   0.151 Td    10.4 eV                                       
+R47   0.153 Td    10.5 eV                                       
+R48   0.154 Td    10.6 eV                                       
+R49   0.156 Td    10.7 eV                                       
+R50   0.157 Td    10.8 eV                                       
+R51   0.159 Td    10.9 eV                                       
+R52   0.160 Td    11.0 eV                                       
+R53   0.162 Td    11.1 eV                                       
+R54   0.163 Td    11.2 eV                                       
+R55   0.165 Td    11.3 eV                                       
+R56   0.166 Td    11.4 eV                                       
+R57   0.168 Td    11.6 eV                                       
+R58   0.169 Td    11.7 eV                                       
+R59   0.171 Td    11.8 eV                                       
+R60   0.172 Td    11.9 eV                                       
+R61   0.174 Td    12.0 eV                                       
+R62   0.175 Td    12.1 eV                                       
+R63   0.177 Td    12.2 eV                                       
+R64   0.179 Td    12.4 eV                                       
+R65   0.180 Td    12.5 eV                                       
+R66   0.182 Td    12.6 eV                                       
+R67   0.184 Td    12.7 eV                                       
+R68   0.185 Td    12.8 eV                                       
+R69   0.187 Td    13.0 eV                                       
+R70   0.189 Td    13.1 eV                                       
+R71   0.191 Td    13.2 eV                                       
+R72   0.192 Td    13.3 eV                                       
+R73   0.194 Td    13.5 eV                                       
+R74   0.196 Td    13.6 eV                                       
+R75   0.198 Td    13.7 eV                                       
+R76   0.200 Td    13.9 eV                                       
+R77   0.202 Td    14.0 eV                                       
+R78   0.203 Td    14.1 eV                                       
+R79   0.205 Td    14.3 eV                                       
+R80   0.207 Td    14.4 eV                                       
+R81   0.209 Td    14.5 eV                                       
+R82   0.211 Td    14.7 eV                                       
+R83   0.213 Td    14.8 eV                                       
+R84   0.215 Td    15.0 eV                                       
+R85   0.217 Td    15.1 eV                                       
+R86   0.219 Td    15.3 eV                                       
+R87   0.221 Td    15.4 eV                                       
+R88   0.223 Td    15.5 eV                                       
+R89   0.225 Td    15.7 eV                                       
+R90   0.227 Td    15.9 eV                                       
+R91   0.229 Td    16.0 eV                                       
+R92   0.231 Td    16.2 eV                                       
+R93   0.234 Td    16.3 eV                                       
+R94   0.236 Td    16.5 eV                                       
+R95   0.238 Td    16.6 eV                                       
+R96   0.240 Td    16.8 eV                                       
+R97   0.242 Td    17.0 eV                                       
+R98   0.245 Td    17.1 eV                                       
+R99   0.247 Td    17.3 eV                                       
+R100  0.249 Td    17.4 eV                                       
+R101  0.251 Td    17.6 eV                                       
+R102  0.254 Td    17.8 eV                                       
+R103  0.256 Td    18.0 eV                                       
+R104  0.258 Td    18.1 eV                                       
+R105  0.261 Td    18.3 eV                                       
+R106  0.263 Td    18.5 eV                                       
+R107  0.266 Td    18.7 eV                                       
+R108  0.268 Td    18.8 eV                                       
+R109  0.271 Td    19.0 eV                                       
+R110  0.273 Td    19.2 eV                                       
+R111  0.276 Td    19.4 eV                                       
+R112  0.278 Td    19.6 eV                                       
+R113  0.281 Td    19.8 eV                                       
+R114  0.283 Td    20.0 eV                                       
+R115  0.286 Td    20.1 eV                                       
+R116  0.289 Td    20.3 eV                                       
+R117  0.291 Td    20.5 eV                                       
+R118  0.294 Td    20.7 eV                                       
+R119  0.297 Td    20.9 eV                                       
+R120  0.300 Td    21.1 eV                                       
+R121  0.302 Td    21.3 eV                                       
+R122  0.305 Td    21.5 eV                                       
+R123  0.308 Td    21.8 eV                                       
+R124  0.311 Td    22.0 eV                                       
+R125  0.314 Td    22.2 eV                                       
+R126  0.317 Td    22.4 eV                                       
+R127  0.320 Td    22.6 eV                                       
+R128  0.322 Td    22.8 eV                                       
+R129  0.325 Td    23.0 eV                                       
+R130  0.328 Td    23.3 eV                                       
+R131  0.332 Td    23.5 eV                                       
+R132  0.335 Td    23.7 eV                                       
+R133  0.338 Td    23.9 eV                                       
+R134  0.341 Td    24.2 eV                                       
+R135  0.344 Td    24.4 eV                                       
+R136  0.347 Td    24.6 eV                                       
+R137  0.350 Td    24.9 eV                                       
+R138  0.354 Td    25.1 eV                                       
+R139  0.357 Td    25.4 eV                                       
+R140  0.360 Td    25.6 eV                                       
+R141  0.364 Td    25.9 eV                                       
+R142  0.367 Td    26.1 eV                                       
+R143  0.370 Td    26.4 eV                                       
+R144  0.374 Td    26.6 eV                                       
+R145  0.377 Td    26.9 eV                                       
+R146  0.381 Td    27.1 eV                                       
+R147  0.384 Td    27.4 eV                                       
+R148  0.388 Td    27.7 eV                                       
+R149  0.391 Td    27.9 eV                                       
+R150  0.395 Td    28.2 eV                                       
+R151  0.399 Td    28.5 eV                                       
+R152  0.402 Td    28.8 eV                                       
+R153  0.406 Td    29.0 eV                                       
+R154  0.410 Td    29.3 eV                                       
+R155  0.414 Td    29.6 eV                                       
+R156  0.417 Td    29.9 eV                                       
+R157  0.421 Td    30.2 eV                                       
+R158  0.425 Td    30.5 eV                                       
+R159  0.429 Td    30.8 eV                                       
+R160  0.433 Td    31.1 eV                                       
+R161  0.437 Td    31.4 eV                                       
+R162  0.441 Td    31.7 eV                                       
+R163  0.445 Td    32.0 eV                                       
+R164  0.449 Td    32.3 eV                                       
+R165  0.454 Td    32.6 eV                                       
+R166  0.458 Td    32.9 eV                                       
+R167  0.462 Td    33.2 eV                                       
+R168  0.466 Td    33.5 eV                                       
+R169  0.471 Td    33.9 eV                                       
+R170  0.475 Td    34.2 eV                                       
+R171  0.479 Td    34.5 eV                                       
+R172  0.484 Td    34.9 eV                                       
+R173  0.488 Td    35.2 eV                                       
+R174  0.493 Td    35.5 eV                                       
+R175  0.497 Td    35.9 eV                                       
+R176  0.502 Td    36.2 eV                                       
+R177  0.507 Td    36.6 eV                                       
+R178  0.511 Td    36.9 eV                                       
+R179  0.516 Td    37.3 eV                                       
+R180  0.521 Td    37.7 eV                                       
+R181  0.526 Td    38.0 eV                                       
+R182  0.531 Td    38.4 eV                                       
+R183  0.535 Td    38.8 eV                                       
+R184  0.540 Td    39.1 eV                                       
+R185  0.545 Td    39.5 eV                                       
+R186  0.550 Td    39.9 eV                                       
+R187  0.556 Td    40.3 eV                                       
+R188  0.561 Td    40.7 eV                                       
+R189  0.566 Td    41.1 eV                                       
+R190  0.571 Td    41.5 eV                                       
+R191  0.576 Td    41.9 eV                                       
+R192  0.582 Td    42.3 eV                                       
+R193  0.587 Td    42.7 eV                                       
+R194  0.593 Td    43.1 eV                                       
+R195  0.598 Td    43.5 eV                                       
+R196  0.604 Td    43.9 eV                                       
+R197  0.609 Td    44.4 eV                                       
+R198  0.615 Td    44.8 eV                                       
+R199  0.621 Td    45.2 eV                                       
+R200  0.626 Td    45.7 eV                                       
+R201  0.632 Td    46.1 eV                                       
+R202  0.638 Td    46.6 eV                                       
+R203  0.644 Td    47.0 eV                                       
+R204  0.650 Td    47.5 eV                                       
+R205  0.656 Td    47.9 eV                                       
+R206  0.662 Td    48.4 eV                                       
+R207  0.668 Td    48.9 eV                                       
+R208  0.674 Td    49.3 eV                                       
+R209  0.681 Td    49.8 eV                                       
+R210  0.687 Td    50.3 eV                                       
+R211  0.693 Td    50.8 eV                                       
+R212  0.700 Td    51.3 eV                                       
+R213  0.706 Td    51.8 eV                                       
+R214  0.713 Td    52.3 eV                                       
+R215  0.719 Td    52.8 eV                                       
+R216  0.726 Td    53.3 eV                                       
+R217  0.733 Td    53.8 eV                                       
+R218  0.739 Td    54.3 eV                                       
+R219  0.746 Td    54.9 eV                                       
+R220  0.753 Td    55.4 eV                                       
+R221  0.760 Td    55.9 eV                                       
+R222  0.767 Td    56.5 eV                                       
+R223  0.774 Td    57.0 eV                                       
+R224  0.781 Td    57.6 eV                                       
+R225  0.789 Td    58.1 eV                                       
+R226  0.796 Td    58.7 eV                                       
+R227  0.803 Td    59.3 eV                                       
+R228  0.811 Td    59.8 eV                                       
+R229  0.818 Td    60.4 eV                                       
+R230  0.826 Td    61.0 eV                                       
+R231  0.834 Td    61.6 eV                                       
+R232  0.841 Td    62.2 eV                                       
+R233  0.849 Td    62.8 eV                                       
+R234  0.857 Td    63.4 eV                                       
+R235  0.865 Td    64.0 eV                                       
+R236  0.873 Td    64.6 eV                                       
+R237  0.881 Td    65.3 eV                                       
+R238  0.889 Td    65.9 eV                                       
+R239  0.897 Td    66.5 eV                                       
+R240  0.906 Td    67.2 eV                                       
+R241  0.914 Td    67.8 eV                                       
+R242  0.922 Td    68.5 eV                                       
+R243  0.931 Td    69.2 eV                                       
+R244  0.940 Td    69.8 eV                                       
+R245  0.948 Td    70.5 eV                                       
+R246  0.957 Td    71.2 eV                                       
+R247  0.966 Td    71.9 eV                                       
+R248  0.975 Td    72.6 eV                                       
+R249  0.984 Td    73.3 eV                                       
+R250  0.993 Td    74.0 eV                                       
+R251  1.00 Td    74.7 eV                                        
+R252  1.01 Td    75.5 eV                                        
+R253  1.02 Td    76.2 eV                                        
+R254  1.03 Td    76.9 eV                                        
+R255  1.04 Td    77.7 eV                                        
+R256  1.05 Td    78.4 eV                                        
+R257  1.06 Td    79.2 eV                                        
+R258  1.07 Td    80.0 eV                                        
+R259  1.08 Td    80.7 eV                                        
+R260  1.09 Td    81.5 eV                                        
+R261  1.10 Td    82.3 eV                                        
+R262  1.11 Td    83.1 eV                                        
+R263  1.12 Td    83.9 eV                                        
+R264  1.13 Td    84.7 eV                                        
+R265  1.14 Td    85.6 eV                                        
+R266  1.15 Td    86.4 eV                                        
+R267  1.16 Td    87.2 eV                                        
+R268  1.17 Td    88.1 eV                                        
+R269  1.18 Td    88.9 eV                                        
+R270  1.19 Td    89.8 eV                                        
+R271  1.21 Td    90.7 eV                                        
+R272  1.22 Td    91.6 eV                                        
+R273  1.23 Td    92.4 eV                                        
+R274  1.24 Td    93.3 eV                                        
+R275  1.25 Td    94.2 eV                                        
+R276  1.26 Td    95.2 eV                                        
+R277  1.27 Td    96.1 eV                                        
+R278  1.29 Td    97.0 eV                                        
+R279  1.30 Td    98.0 eV                                        
+R280  1.31 Td    98.9 eV                                        
+R281  1.32 Td    99.9 eV                                        
+R282  1.33 Td    101. eV                                        
+R283  1.35 Td    102. eV                                        
+R284  1.36 Td    103. eV                                        
+R285  1.37 Td    104. eV                                        
+R286  1.38 Td    105. eV                                        
+R287  1.40 Td    106. eV                                        
+R288  1.41 Td    107. eV                                        
+R289  1.42 Td    108. eV                                        
+R290  1.44 Td    109. eV                                        
+R291  1.45 Td    110. eV                                        
+R292  1.46 Td    111. eV                                        
+R293  1.48 Td    112. eV                                        
+R294  1.49 Td    113. eV                                        
+R295  1.50 Td    114. eV                                        
+R296  1.52 Td    115. eV                                        
+R297  1.53 Td    117. eV                                        
+R298  1.55 Td    118. eV                                        
+R299  1.56 Td    119. eV                                        
+R300  1.57 Td    120. eV                                        
+R301  1.59 Td    121. eV                                        
+R302  1.60 Td    122. eV                                        
+R303  1.62 Td    124. eV                                        
+R304  1.63 Td    125. eV                                        
+R305  1.65 Td    126. eV                                        
+R306  1.66 Td    127. eV                                        
+R307  1.68 Td    128. eV                                        
+R308  1.70 Td    130. eV                                        
+R309  1.71 Td    131. eV                                        
+R310  1.73 Td    132. eV                                        
+R311  1.74 Td    134. eV                                        
+R312  1.76 Td    135. eV                                        
+R313  1.78 Td    136. eV                                        
+R314  1.79 Td    137. eV                                        
+R315  1.81 Td    139. eV                                        
+R316  1.82 Td    140. eV                                        
+R317  1.84 Td    142. eV                                        
+R318  1.86 Td    143. eV                                        
+R319  1.88 Td    144. eV                                        
+R320  1.89 Td    146. eV                                        
+R321  1.91 Td    147. eV                                        
+R322  1.93 Td    149. eV                                        
+R323  1.95 Td    150. eV                                        
+R324  1.96 Td    151. eV                                        
+R325  1.98 Td    153. eV                                        
+R326  2.00 Td    154. eV                                        
+R327  2.02 Td    156. eV                                        
+R328  2.04 Td    157. eV                                        
+R329  2.06 Td    159. eV                                        
+R330  2.08 Td    160. eV                                        
+R331  2.10 Td    162. eV                                        
+R332  2.12 Td    164. eV                                        
+R333  2.13 Td    165. eV                                        
+R334  2.15 Td    167. eV                                        
+R335  2.17 Td    168. eV                                        
+R336  2.19 Td    170. eV                                        
+R337  2.21 Td    172. eV                                        
+R338  2.24 Td    173. eV                                        
+R339  2.26 Td    175. eV                                        
+R340  2.28 Td    177. eV                                        
+R341  2.30 Td    179. eV                                        
+R342  2.32 Td    180. eV                                        
+R343  2.34 Td    182. eV                                        
+R344  2.36 Td    184. eV                                        
+R345  2.38 Td    186. eV                                        
+R346  2.41 Td    187. eV                                        
+R347  2.43 Td    189. eV                                        
+R348  2.45 Td    191. eV                                        
+R349  2.47 Td    193. eV                                        
+R350  2.50 Td    195. eV                                        
+R351  2.52 Td    197. eV                                        
+R352  2.54 Td    199. eV                                        
+R353  2.57 Td    201. eV                                        
+R354  2.59 Td    202. eV                                        
+R355  2.61 Td    204. eV                                        
+R356  2.64 Td    206. eV                                        
+R357  2.66 Td    208. eV                                        
+R358  2.69 Td    210. eV                                        
+R359  2.71 Td    213. eV                                        
+R360  2.74 Td    215. eV                                        
+R361  2.76 Td    217. eV                                        
+R362  2.79 Td    219. eV                                        
+R363  2.81 Td    221. eV                                        
+R364  2.84 Td    223. eV                                        
+R365  2.87 Td    225. eV                                        
+R366  2.89 Td    227. eV                                        
+R367  2.92 Td    230. eV                                        
+R368  2.95 Td    232. eV                                        
+R369  2.97 Td    234. eV                                        
+R370  3.00 Td    236. eV                                        
+R371  3.03 Td    239. eV                                        
+R372  3.06 Td    241. eV                                        
+R373  3.09 Td    243. eV                                        
+R374  3.12 Td    246. eV                                        
+R375  3.14 Td    248. eV                                        
+R376  3.17 Td    251. eV                                        
+R377  3.20 Td    253. eV                                        
+R378  3.23 Td    256. eV                                        
+R379  3.26 Td    258. eV                                        
+R380  3.29 Td    261. eV                                        
+R381  3.32 Td    263. eV                                        
+R382  3.35 Td    266. eV                                        
+R383  3.38 Td    268. eV                                        
+R384  3.42 Td    271. eV                                        
+R385  3.45 Td    273. eV                                        
+R386  3.48 Td    276. eV                                        
+R387  3.51 Td    279. eV                                        
+R388  3.54 Td    282. eV                                        
+R389  3.58 Td    284. eV                                        
+R390  3.61 Td    287. eV                                        
+R391  3.64 Td    290. eV                                        
+R392  3.68 Td    293. eV                                        
+R393  3.71 Td    296. eV                                        
+R394  3.75 Td    299. eV                                        
+R395  3.78 Td    301. eV                                        
+R396  3.82 Td    304. eV                                        
+R397  3.85 Td    307. eV                                        
+R398  3.89 Td    310. eV                                        
+R399  3.92 Td    314. eV                                        
+R400  3.96 Td    317. eV                                        
+R401  4.00 Td    320. eV                                        
+R402  4.03 Td    323. eV                                        
+R403  4.07 Td    326. eV                                        
+R404  4.11 Td    329. eV                                        
+R405  4.15 Td    333. eV                                        
+R406  4.18 Td    336. eV                                        
+R407  4.22 Td    339. eV                                        
+R408  4.26 Td    343. eV                                        
+R409  4.30 Td    346. eV                                        
+R410  4.34 Td    350. eV                                        
+R411  4.38 Td    353. eV                                        
+R412  4.42 Td    357. eV                                        
+R413  4.46 Td    360. eV                                        
+R414  4.50 Td    364. eV                                        
+R415  4.55 Td    368. eV                                        
+R416  4.59 Td    372. eV                                        
+R417  4.63 Td    375. eV                                        
+R418  4.67 Td    379. eV                                        
+R419  4.72 Td    383. eV                                        
+R420  4.76 Td    387. eV                                        
+R421  4.80 Td    391. eV                                        
+R422  4.85 Td    396. eV                                        
+R423  4.89 Td    400. eV                                        
+R424  4.94 Td    404. eV                                        
+R425  4.99 Td    408. eV                                        
+R426  5.03 Td    413. eV                                        
+R427  5.08 Td    417. eV                                        
+R428  5.13 Td    Failed                                         
+R429  5.17 Td    Failed                                         
+R430  5.22 Td    Failed                                         
+R431  5.27 Td    Failed                                         
+R432  5.32 Td    Failed                                         
+R433  5.37 Td    Failed                                         
+R434  5.42 Td    Failed                                         
+R435  5.47 Td    Failed                                         
+R436  5.52 Td    Failed                                         
+R437  5.57 Td    Failed                                         
+R438  5.62 Td    Failed                                         
+R439  5.67 Td    Failed                                         
+R440  5.72 Td    Failed                                         
+R441  5.78 Td    Failed                                         
+R442  5.83 Td    Failed                                         
+R443  5.89 Td    Failed                                         
+R444  5.94 Td    Failed                                         
+R445  5.99 Td    Failed                                         
+R446  6.05 Td    Failed                                         
+R447  6.11 Td    Failed                                         
+R448  6.16 Td    Failed                                         
+R449  6.22 Td    Failed                                         
+R450  6.28 Td    Failed                                         
+R451  6.34 Td    Failed                                         
+R452  6.39 Td    Failed                                         
+R453  6.45 Td    Failed                                         
+R454  6.51 Td    Failed                                         
+R455  6.57 Td    Failed                                         
+R456  6.63 Td    Failed                                         
+R457  6.70 Td    Failed                                         
+R458  6.76 Td    Failed                                         
+R459  6.82 Td    Failed                                         
+R460  6.88 Td    Failed                                         
+R461  6.95 Td    Failed                                         
+R462  7.01 Td    Failed                                         
+R463  7.08 Td    Failed                                         
+R464  7.14 Td    Failed                                         
+R465  7.21 Td    Failed                                         
+R466  7.28 Td    Failed                                         
+R467  7.34 Td    Failed                                         
+R468  7.41 Td    Failed                                         
+R469  7.48 Td    Failed                                         
+R470  7.55 Td    Failed                                         
+R471  7.62 Td    Failed                                         
+R472  7.69 Td    Failed                                         
+R473  7.76 Td    Failed                                         
+R474  7.83 Td    Failed                                         
+R475  7.90 Td    Failed                                         
+R476  7.98 Td    Failed                                         
+R477  8.05 Td    Failed                                         
+R478  8.13 Td    Failed                                         
+R479  8.20 Td    Failed                                         
+R480  8.28 Td    Failed                                         
+R481  8.35 Td    Failed                                         
+R482  8.43 Td    Failed                                         
+R483  8.51 Td    Failed                                         
+R484  8.59 Td    Failed                                         
+R485  8.67 Td    Failed                                         
+R486  8.75 Td    Failed                                         
+R487  8.83 Td    Failed                                         
+R488  8.91 Td    Failed                                         
+R489  8.99 Td    Failed                                         
+R490  9.08 Td    Failed                                         
+R491  9.16 Td    Failed                                         
+R492  9.25 Td    Failed                                         
+R493  9.33 Td    Failed                                         
+R494  9.42 Td    Failed                                         
+R495  9.51 Td    Failed                                         
+R496  9.59 Td    Failed                                         
+R497  9.68 Td    Failed                                         
+R498  9.77 Td    Failed                                         
+R499  9.86 Td    Failed                                         
+R500  9.95 Td    Failed                                         
+R501  10.0 Td    Failed                                         
+R502  10.1 Td    Failed                                         
+R503  10.2 Td    Failed                                         
+R504  10.3 Td    Failed                                         
+R505  10.4 Td    Failed                                         
+R506  10.5 Td    Failed                                         
+R507  10.6 Td    Failed                                         
+R508  10.7 Td    Failed                                         
+R509  10.8 Td    Failed                                         
+R510  10.9 Td    Failed                                         
+R511  11.0 Td    Failed                                         
+R512  11.1 Td    Failed                                         
+R513  11.2 Td    Failed                                         
+R514  11.3 Td    Failed                                         
+R515  11.4 Td    Failed                                         
+R516  11.5 Td    Failed                                         
+R517  11.6 Td    Failed                                         
+R518  11.8 Td    Failed                                         
+R519  11.9 Td    Failed                                         
+R520  12.0 Td    Failed                                         
+R521  12.1 Td    Failed                                         
+R522  12.2 Td    Failed                                         
+R523  12.3 Td    Failed                                         
+R524  12.4 Td    Failed                                         
+R525  12.5 Td    Failed                                         
+R526  12.7 Td    Failed                                         
+R527  12.8 Td    Failed                                         
+R528  12.9 Td    Failed                                         
+R529  13.0 Td    Failed                                         
+R530  13.1 Td    Failed                                         
+R531  13.2 Td    Failed                                         
+R532  13.4 Td    Failed                                         
+R533  13.5 Td    Failed                                         
+R534  13.6 Td    Failed                                         
+R535  13.7 Td    Failed                                         
+R536  13.9 Td    Failed                                         
+R537  14.0 Td    Failed                                         
+R538  14.1 Td    Failed                                         
+R539  14.3 Td    Failed                                         
+R540  14.4 Td    Failed                                         
+R541  14.5 Td    Failed                                         
+R542  14.7 Td    Failed                                         
+R543  14.8 Td    Failed                                         
+R544  14.9 Td    Failed                                         
+R545  15.1 Td    Failed                                         
+R546  15.2 Td    Failed                                         
+R547  15.4 Td    Failed                                         
+R548  15.5 Td    Failed                                         
+R549  15.6 Td    Failed                                         
+R550  15.8 Td    Failed                                         
+R551  15.9 Td    Failed                                         
+R552  16.1 Td    Failed                                         
+R553  16.2 Td    Failed                                         
+R554  16.4 Td    Failed                                         
+R555  16.5 Td    Failed                                         
+R556  16.7 Td    Failed                                         
+R557  16.8 Td    Failed                                         
+R558  17.0 Td    Failed                                         
+R559  17.1 Td    Failed                                         
+R560  17.3 Td    Failed                                         
+R561  17.5 Td    Failed                                         
+R562  17.6 Td    Failed                                         
+R563  17.8 Td    Failed                                         
+R564  18.0 Td    Failed                                         
+R565  18.1 Td    Failed                                         
+R566  18.3 Td    Failed                                         
+R567  18.5 Td    Failed                                         
+R568  18.6 Td    Failed                                         
+R569  18.8 Td    Failed                                         
+R570  19.0 Td    Failed                                         
+R571  19.2 Td    Failed                                         
+R572  19.3 Td    Failed                                         
+R573  19.5 Td    Failed                                         
+R574  19.7 Td    Failed                                         
+R575  19.9 Td    Failed                                         
+R576  20.1 Td    Failed                                         
+R577  20.2 Td    Failed                                         
+R578  20.4 Td    Failed                                         
+R579  20.6 Td    Failed                                         
+R580  20.8 Td    Failed                                         
+R581  21.0 Td    Failed                                         
+R582  21.2 Td    Failed                                         
+R583  21.4 Td    Failed                                         
+R584  21.6 Td    Failed                                         
+R585  21.8 Td    Failed                                         
+R586  22.0 Td    Failed                                         
+R587  22.2 Td    Failed                                         
+R588  22.4 Td    Failed                                         
+R589  22.6 Td    Failed                                         
+R590  22.8 Td    Failed                                         
+R591  23.0 Td    Failed                                         
+R592  23.2 Td    Failed                                         
+R593  23.5 Td    Failed                                         
+R594  23.7 Td    Failed                                         
+R595  23.9 Td    Failed                                         
+R596  24.1 Td    Failed                                         
+R597  24.3 Td    Failed                                         
+R598  24.6 Td    Failed                                         
+R599  24.8 Td    Failed                                         
+R600  25.0 Td    Failed                                         
+R601  25.3 Td    Failed                                         
+R602  25.5 Td    Failed                                         
+R603  25.7 Td    Failed                                         
+R604  26.0 Td    Failed                                         
+R605  26.2 Td    Failed                                         
+R606  26.4 Td    Failed                                         
+R607  26.7 Td    Failed                                         
+R608  26.9 Td    Failed                                         
+R609  27.2 Td    Failed                                         
+R610  27.4 Td    Failed                                         
+R611  27.7 Td    Failed                                         
+R612  28.0 Td    Failed                                         
+R613  28.2 Td    Failed                                         
+R614  28.5 Td    Failed                                         
+R615  28.7 Td    Failed                                         
+R616  29.0 Td    Failed                                         
+R617  29.3 Td    Failed                                         
+R618  29.5 Td    Failed                                         
+R619  29.8 Td    Failed                                         
+R620  30.1 Td    Failed                                         
+R621  30.4 Td    Failed                                         
+R622  30.7 Td    Failed                                         
+R623  30.9 Td    Failed                                         
+R624  31.2 Td    Failed                                         
+R625  31.5 Td    Failed                                         
+R626  31.8 Td    Failed                                         
+R627  32.1 Td    Failed                                         
+R628  32.4 Td    Failed                                         
+R629  32.7 Td    Failed                                         
+R630  33.0 Td    Failed                                         
+R631  33.3 Td    Failed                                         
+R632  33.6 Td    Failed                                         
+R633  33.9 Td    Failed                                         
+R634  34.2 Td    Failed                                         
+R635  34.6 Td    Failed                                         
+R636  34.9 Td    Failed                                         
+R637  35.2 Td    Failed                                         
+R638  35.5 Td    Failed                                         
+R639  35.9 Td    Failed                                         
+R640  36.2 Td    Failed                                         
+R641  36.5 Td    Failed                                         
+R642  36.9 Td    Failed                                         
+R643  37.2 Td    Failed                                         
+R644  37.5 Td    Failed                                         
+R645  37.9 Td    Failed                                         
+R646  38.2 Td    Failed                                         
+R647  38.6 Td    Failed                                         
+R648  39.0 Td    Failed                                         
+R649  39.3 Td    Failed                                         
+R650  39.7 Td    Failed                                         
+R651  40.1 Td    Failed                                         
+R652  40.4 Td    Failed                                         
+R653  40.8 Td    Failed                                         
+R654  41.2 Td    Failed                                         
+R655  41.6 Td    Failed                                         
+R656  41.9 Td    Failed                                         
+R657  42.3 Td    Failed                                         
+R658  42.7 Td    Failed                                         
+R659  43.1 Td    Failed                                         
+R660  43.5 Td    Failed                                         
+R661  43.9 Td    Failed                                         
+R662  44.3 Td    Failed                                         
+R663  44.7 Td    Failed                                         
+R664  45.1 Td    Failed                                         
+R665  45.6 Td    Failed                                         
+R666  46.0 Td    Failed                                         
+R667  46.4 Td    Failed                                         
+R668  46.8 Td    Failed                                         
+R669  47.3 Td    Failed                                         
+R670  47.7 Td    Failed                                         
+R671  48.2 Td    Failed                                         
+R672  48.6 Td    Failed                                         
+R673  49.1 Td    Failed                                         
+R674  49.5 Td    Failed                                         
+R675  50.0 Td    Failed                                         
+R676  50.4 Td    Failed                                         
+R677  50.9 Td    Failed                                         
+R678  51.4 Td    Failed                                         
+R679  51.8 Td    Failed                                         
+R680  52.3 Td    Failed                                         
+R681  52.8 Td    Failed                                         
+R682  53.3 Td    Failed                                         
+R683  53.8 Td    Failed                                         
+R684  54.3 Td    Failed                                         
+R685  54.8 Td    Failed                                         
+R686  55.3 Td    Failed                                         
+R687  55.8 Td    Failed                                         
+R688  56.3 Td    Failed                                         
+R689  56.9 Td    Failed                                         
+R690  57.4 Td    Failed                                         
+R691  57.9 Td    Failed                                         
+R692  58.4 Td    Failed                                         
+R693  59.0 Td    Failed                                         
+R694  59.5 Td    Failed                                         
+R695  60.1 Td    Failed                                         
+R696  60.6 Td    Failed                                         
+R697  61.2 Td    Failed                                         
+R698  61.8 Td    Failed                                         
+R699  62.3 Td    Failed                                         
+R700  62.9 Td    Failed                                         
+R701  63.5 Td    Failed                                         
+R702  64.1 Td    Failed                                         
+R703  64.7 Td    Failed                                         
+R704  65.3 Td    Failed                                         
+R705  65.9 Td    Failed                                         
+R706  66.5 Td    Failed                                         
+R707  67.1 Td    Failed                                         
+R708  67.7 Td    Failed                                         
+R709  68.4 Td    Failed                                         
+R710  69.0 Td    Failed                                         
+R711  69.6 Td    Failed                                         
+R712  70.3 Td    Failed                                         
+R713  70.9 Td    Failed                                         
+R714  71.6 Td    Failed                                         
+R715  72.3 Td    Failed                                         
+R716  72.9 Td    Failed                                         
+R717  73.6 Td    Failed                                         
+R718  74.3 Td    Failed                                         
+R719  75.0 Td    Failed                                         
+R720  75.7 Td    Failed                                         
+R721  76.4 Td    Failed                                         
+R722  77.1 Td    Failed                                         
+R723  77.8 Td    Failed                                         
+R724  78.5 Td    Failed                                         
+R725  79.2 Td    Failed                                         
+R726  80.0 Td    Failed                                         
+R727  80.7 Td    Failed                                         
+R728  81.5 Td    Failed                                         
+R729  82.2 Td    Failed                                         
+R730  83.0 Td    Failed                                         
+R731  83.7 Td    Failed                                         
+R732  84.5 Td    Failed                                         
+R733  85.3 Td    Failed                                         
+R734  86.1 Td    Failed                                         
+R735  86.9 Td    Failed                                         
+R736  87.7 Td    Failed                                         
+R737  88.5 Td    Failed                                         
+R738  89.3 Td    Failed                                         
+R739  90.1 Td    Failed                                         
+R740  91.0 Td    Failed                                         
+R741  91.8 Td    Failed                                         
+R742  92.7 Td    Failed                                         
+R743  93.5 Td    Failed                                         
+R744  94.4 Td    Failed                                         
+R745  95.3 Td    Failed                                         
+R746  96.2 Td    Failed                                         
+R747  97.0 Td    Failed                                         
+R748  97.9 Td    Failed                                         
+R749  98.9 Td    Failed                                         
+R750  99.8 Td    Failed                                         
+R751  101. Td    Failed                                         
+R752  102. Td    Failed                                         
+R753  103. Td    Failed                                         
+R754  104. Td    Failed                                         
+R755  104. Td    Failed                                         
+R756  105. Td    Failed                                         
+R757  106. Td    Failed                                         
+R758  107. Td    Failed                                         
+R759  108. Td    Failed                                         
+R760  109. Td    Failed                                         
+R761  110. Td    Failed                                         
+R762  111. Td    Failed                                         
+R763  112. Td    Failed                                         
+R764  114. Td    Failed                                         
+R765  115. Td    Failed                                         
+R766  116. Td    Failed                                         
+R767  117. Td    Failed                                         
+R768  118. Td    Failed                                         
+R769  119. Td    Failed                                         
+R770  120. Td    Failed                                         
+R771  121. Td    Failed                                         
+R772  122. Td    Failed                                         
+R773  123. Td    Failed                                         
+R774  124. Td    Failed                                         
+R775  126. Td    Failed                                         
+R776  127. Td    Failed                                         
+R777  128. Td    Failed                                         
+R778  129. Td    Failed                                         
+R779  130. Td    Failed                                         
+R780  132. Td    Failed                                         
+R781  133. Td    Failed                                         
+R782  134. Td    Failed                                         
+R783  135. Td    Failed                                         
+R784  137. Td    Failed                                         
+R785  138. Td    Failed                                         
+R786  139. Td    Failed                                         
+R787  140. Td    Failed                                         
+R788  142. Td    Failed                                         
+R789  143. Td    Failed                                         
+R790  144. Td    Failed                                         
+R791  146. Td    Failed                                         
+R792  147. Td    Failed                                         
+R793  148. Td    Failed                                         
+R794  150. Td    Failed                                         
+R795  151. Td    Failed                                         
+R796  152. Td    Failed                                         
+R797  154. Td    Failed                                         
+R798  155. Td    Failed                                         
+R799  157. Td    Failed                                         
+R800  158. Td    Failed                                         
+R801  160. Td    Failed                                         
+R802  161. Td    Failed                                         
+R803  163. Td    Failed                                         
+R804  164. Td    Failed                                         
+R805  166. Td    Failed                                         
+R806  167. Td    Failed                                         
+R807  169. Td    Failed                                         
+R808  170. Td    Failed                                         
+R809  172. Td    Failed                                         
+R810  173. Td    Failed                                         
+R811  175. Td    Failed                                         
+R812  177. Td    Failed                                         
+R813  178. Td    Failed                                         
+R814  180. Td    Failed                                         
+R815  182. Td    Failed                                         
+R816  183. Td    Failed                                         
+R817  185. Td    Failed                                         
+R818  187. Td    Failed                                         
+R819  188. Td    Failed                                         
+R820  190. Td    Failed                                         
+R821  192. Td    Failed                                         
+R822  194. Td    Failed                                         
+R823  196. Td    Failed                                         
+R824  197. Td    Failed                                         
+R825  199. Td    Failed                                         
+R826  201. Td    Failed                                         
+R827  203. Td    Failed                                         
+R828  205. Td    Failed                                         
+R829  207. Td    Failed                                         
+R830  209. Td    Failed                                         
+R831  211. Td    Failed                                         
+R832  212. Td    Failed                                         
+R833  214. Td    Failed                                         
+R834  216. Td    Failed                                         
+R835  218. Td    Failed                                         
+R836  220. Td    Failed                                         
+R837  223. Td    Failed                                         
+R838  225. Td    Failed                                         
+R839  227. Td    Failed                                         
+R840  229. Td    Failed                                         
+R841  231. Td    Failed                                         
+R842  233. Td    Failed                                         
+R843  235. Td    Failed                                         
+R844  237. Td    Failed                                         
+R845  240. Td    Failed                                         
+R846  242. Td    Failed                                         
+R847  244. Td    Failed                                         
+R848  246. Td    Failed                                         
+R849  249. Td    Failed                                         
+R850  251. Td    Failed                                         
+R851  253. Td    Failed                                         
+R852  256. Td    Failed                                         
+R853  258. Td    Failed                                         
+R854  260. Td    Failed                                         
+R855  263. Td    Failed                                         
+R856  265. Td    Failed                                         
+R857  268. Td    Failed                                         
+R858  270. Td    Failed                                         
+R859  273. Td    Failed                                         
+R860  275. Td    Failed                                         
+R861  278. Td    Failed                                         
+R862  280. Td    Failed                                         
+R863  283. Td    Failed                                         
+R864  285. Td    Failed                                         
+R865  288. Td    Failed                                         
+R866  291. Td    Failed                                         
+R867  293. Td    Failed                                         
+R868  296. Td    Failed                                         
+R869  299. Td    Failed                                         
+R870  302. Td    Failed                                         
+R871  304. Td    Failed                                         
+R872  307. Td    Failed                                         
+R873  310. Td    Failed                                         
+R874  313. Td    Failed                                         
+R875  316. Td    Failed                                         
+R876  319. Td    Failed                                         
+R877  322. Td    Failed                                         
+R878  325. Td    Failed                                         
+R879  328. Td    Failed                                         
+R880  331. Td    Failed                                         
+R881  334. Td    Failed                                         
+R882  337. Td    Failed                                         
+R883  340. Td    Failed                                         
+R884  343. Td    Failed                                         
+R885  346. Td    Failed                                         
+R886  350. Td    Failed                                         
+R887  353. Td    Failed                                         
+R888  356. Td    Failed                                         
+R889  359. Td    Failed                                         
+R890  363. Td    Failed                                         
+R891  366. Td    Failed                                         
+R892  369. Td    Failed                                         
+R893  373. Td    Failed                                         
+R894  376. Td    Failed                                         
+R895  380. Td    Failed                                         
+R896  383. Td    Failed                                         
+R897  387. Td    Failed                                         
+R898  390. Td    Failed                                         
+R899  394. Td    Failed                                         
+R900  398. Td    Failed                                         
+R901  401. Td    Failed                                         
+R902  405. Td    Failed                                         
+R903  409. Td    Failed                                         
+R904  413. Td    Failed                                         
+R905  417. Td    Failed                                         
+R906  420. Td    Failed                                         
+R907  424. Td    Failed                                         
+R908  428. Td    Failed                                         
+R909  432. Td    Failed                                         
+R910  436. Td    Failed                                         
+R911  440. Td    Failed                                         
+R912  444. Td    Failed                                         
+R913  448. Td    Failed                                         
+R914  453. Td    Failed                                         
+R915  457. Td    Failed                                         
+R916  461. Td    Failed                                         
+R917  465. Td    Failed                                         
+R918  470. Td    Failed                                         
+R919  474. Td    Failed                                         
+R920  478. Td    Failed                                         
+R921  483. Td    Failed                                         
+R922  487. Td    Failed                                         
+R923  492. Td    Failed                                         
+R924  496. Td    Failed                                         
+R925  501. Td    Failed                                         
+R926  505. Td    Failed                                         
+R927  510. Td    Failed                                         
+R928  515. Td    Failed                                         
+R929  520. Td    Failed                                         
+R930  524. Td    Failed                                         
+R931  529. Td    Failed                                         
+R932  534. Td    Failed                                         
+R933  539. Td    Failed                                         
+R934  544. Td    Failed                                         
+R935  549. Td    Failed                                         
+R936  554. Td    Failed                                         
+R937  559. Td    Failed                                         
+R938  565. Td    Failed                                         
+R939  570. Td    Failed                                         
+R940  575. Td    Failed                                         
+R941  580. Td    Failed                                         
+R942  586. Td    Failed                                         
+R943  591. Td    Failed                                         
+R944  597. Td    Failed                                         
+R945  602. Td    Failed                                         
+R946  608. Td    Failed                                         
+R947  613. Td    Failed                                         
+R948  619. Td    Failed                                         
+R949  625. Td    Failed                                         
+R950  631. Td    Failed                                         
+R951  637. Td    Failed                                         
+R952  642. Td    Failed                                         
+R953  648. Td    Failed                                         
+R954  654. Td    Failed                                         
+R955  660. Td    Failed                                         
+R956  667. Td    Failed                                         
+R957  673. Td    Failed                                         
+R958  679. Td    Failed                                         
+R959  685. Td    Failed                                         
+R960  692. Td    Failed                                         
+R961  698. Td    Failed                                         
+R962  704. Td    Failed                                         
+R963  711. Td    Failed                                         
+R964  718. Td    Failed                                         
+R965  724. Td    Failed                                         
+R966  731. Td    Failed                                         
+R967  738. Td    Failed                                         
+R968  745. Td    Failed                                         
+R969  751. Td    Failed                                         
+R970  758. Td    Failed                                         
+R971  765. Td    Failed                                         
+R972  772. Td    Failed                                         
+R973  780. Td    Failed                                         
+R974  787. Td    Failed                                         
+R975  794. Td    Failed                                         
+R976  802. Td    Failed                                         
+R977  809. Td    Failed                                         
+R978  816. Td    Failed                                         
+R979  824. Td    Failed                                         
+R980  832. Td    Failed                                         
+R981  839. Td    Failed                                         
+R982  847. Td    Failed                                         
+R983  855. Td    Failed                                         
+R984  863. Td    Failed                                         
+R985  871. Td    Failed                                         
+R986  879. Td    Failed                                         
+R987  887. Td    Failed                                         
+R988  895. Td    Failed                                         
+R989  904. Td    Failed                                         
+R990  912. Td    Failed                                         
+R991  920. Td    Failed                                         
+R992  929. Td    Failed                                         
+R993  938. Td    Failed                                         
+R994  946. Td    Failed                                         
+R995  955. Td    Failed                                         
+R996  964. Td    Failed                                         
+R997  973. Td    Failed                                         
+R998  982. Td    Failed                                         
+R999  991. Td    Failed                                         
+R***  1000. Td    Failed                                        
+SAVERESULTS
+Surge.dat
+FINISHED
