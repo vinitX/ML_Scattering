@@ -1,5 +1,5 @@
 READCOLLISIONS
-LXCat0.txt
+LXCat.txt
 Surge
 1
 CONDITIONS
@@ -27,7 +27,7 @@ CONDITIONS
 1         / Normalize composition to unity: 0=No; 1=Yes
 RUNSERIES
 1          / Variable: 1=E/N; 2=Mean energy; 3=Maxwellian energy 
-0.1 1000.0  / Min Max
+0.001 100.0  / Min Max
 1000         / Number 
 3          / Type: 1=Linear; 2=Quadratic; 3=Exponential
 SAVERESULTS
