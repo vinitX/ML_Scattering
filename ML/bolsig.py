@@ -89,34 +89,28 @@ class bolsig:
         f=open("Surge.dat","r")
     
         E=np.zeros(n)
-        out=np.zeros((n,4))
+        out=np.zeros((n,3))
         for line in f:
-            if line[:8]=='E/N (Td)' and line[8:].strip()=='Mean energy (eV)':
-                for i in range(n):
-                    l=f.readline().strip()
-                    if len(l)==0: break
-                    E[i], out[i,0] = [float(x) for x in l.split()]
             if line[:8]=='E/N (Td)' and line[8:].strip()=='Mobility *N (1/m/V/s)':
                 for i in range(n):
                     l=f.readline().strip()
                     if len(l)==0: break
-                    E[i], out[i,1] = [float(x) for x in l.split()]
+                    E[i], out[i,0] = [float(x) for x in l.split()]
             if line[:8]=='E/N (Td)' and line[8:].strip()=='Diffusion coefficient *N (1/m/s)':
                 for i in range(n):
                     l=f.readline().strip()
                     if len(l)==0: break
-                    E[i], out[i,2] = [float(x) for x in l.split()]
+                    E[i], out[i,1] = [float(x) for x in l.split()]
     
-        out[:,3]=out[:,2]/out[:,1] #Characteristic Energy = Diffusion/ Mobility
+        out[:,2]=out[:,1]/out[:,0] #Characteristic Energy = Diffusion/ Mobility
     
-        out[:,1]=out[:,1]*E*1e-21 #Drift Velocity
-        out[:,2]=out[:,2]*1e-24 #Diffusion coefficient
+        out[:,0]=out[:,0]*E*1e-21 #Drift Velocity
+        out[:,1]=out[:,1]*1e-24 #Diffusion coefficient
     
         if np.sum(out<0)>0:
             plt.loglog(E,out[:,0])
             plt.loglog(E,out[:,1])
-            plt.loglog(E,out[:,2])
-            plt.loglog(E,out[:,3])
+            plt.loglog(E,out[:,2])	
             plt.show()
     
         #print('time:',time.time()-t)
